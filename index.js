@@ -1,12 +1,13 @@
-var loadLeverJobs = function (options) {
-
+window.loadLeverJobs = function (options) {
   //Checking for potential Lever source or origin parameters
   var pageUrl = window.location.href;
   var leverParameter = '';
   var trackingPrefix = '?lever-';
   options.accountName = options.accountName.toLowerCase();
   // Define the container where we will put the content (or put in the body)
-  var jobsContainer = document.getElementById("lever-jobs-container") || document.body;
+  var jobsContainer = document.getElementById("lever-jobs-container");
+
+  if(jobsContainer == null) return;
 
   if( pageUrl.indexOf(trackingPrefix) >= 0){
     // Found Lever parameter
