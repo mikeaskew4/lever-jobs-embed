@@ -183,7 +183,7 @@ window.loadLeverJobs = function (options) {
 
 };
 
-window.loadLeverJobs(window.leverJobsOptions);
+// window.loadLeverJobs(window.leverJobsOptions);
 
 
 
