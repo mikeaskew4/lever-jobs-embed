@@ -1,4 +1,4 @@
-window.loadLeverJobs = function (options) {
+var loadLeverJobs = function (options) {
 
   //Checking for potential Lever source or origin parameters
   var pageUrl = window.location.href;
